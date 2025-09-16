@@ -1,10 +1,10 @@
 {
-  "name": "aws-aifc01-quiz-cli",
-  "version": "2.0.0",
+  "name": "Learner Quiz AI",
+  "version": "1.0.0",
   "description": "Interactive CLI quiz application for AWS Certified AI Practitioner (AIF-C01) exam preparation",
   "main": "index.js",
   "bin": {
-    "aws-aifc01-quiz": "./index.js"
+    "learner-quiz-ai": "./index.js"
   },
   "scripts": {
     "start": "node index.js start",
@@ -27,7 +27,7 @@
     "generative-ai",
     "foundation-models"
   ],
-  "author": "Aaron Wentzel <aaron@3bytes.com>",
+  "author": "Aaron Wentzel <aaronw@3bytes.ai>",
   "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.2",
