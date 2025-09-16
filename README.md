@@ -17,16 +17,19 @@ A comprehensive command-line interface for testing knowledge of AWS services and
 ### Local Installation
 
 1. Navigate to the quiz-cli directory:
+
 ```bash
 cd quiz-cli
 ```
 
-2. Install dependencies:
+1. Install dependencies:
+
 ```bash
 npm install
 ```
 
-3. Make the CLI executable:
+1. Make the CLI executable:
+
 ```bash
 chmod +x index.js
 ```
@@ -42,11 +45,13 @@ npm install -g .
 ## Quick Start
 
 ### Start a Basic Quiz
+
 ```bash
 node index.js start
 ```
 
 ### Start Quiz with Options
+
 ```bash
 # Quiz with time limit (10 minutes)
 node index.js start --time 10
@@ -66,6 +71,7 @@ node index.js start --retry
 ### Available Commands
 
 #### `start` - Begin Quiz Session
+
 Start an interactive quiz with various options:
 
 ```bash
@@ -73,6 +79,7 @@ node index.js start [options]
 ```
 
 **Options:**
+
 - `-f, --file <path>`: Path to questions file (default: ./data/questions.json)
 - `-c, --category <category>`: Filter questions by category (aws, ai, all) [default: all]
 - `-n, --number <count>`: Number of questions to ask (0 = all) [default: 0]
@@ -81,6 +88,7 @@ node index.js start [options]
 - `-r, --retry`: Allow retrying incorrect answers
 
 **Examples:**
+
 ```bash
 # Basic quiz with all questions
 node index.js start
@@ -93,6 +101,7 @@ node index.js start --category ai --retry
 ```
 
 #### `list` - View Available Questions
+
 Display questions from the database:
 
 ```bash
@@ -100,11 +109,13 @@ node index.js list [options]
 ```
 
 **Options:**
+
 - `-f, --file <path>`: Path to questions file
 - `-c, --category <category>`: Filter by category
 - `--stats`: Show question statistics
 
 **Examples:**
+
 ```bash
 # List all questions
 node index.js list
@@ -117,6 +128,7 @@ node index.js list --stats
 ```
 
 #### `validate` - Check Questions File
+
 Validate the format and content of questions file:
 
 ```bash
@@ -124,9 +136,11 @@ node index.js validate [options]
 ```
 
 **Options:**
+
 - `-f, --file <path>`: Path to questions file to validate
 
 #### `results` - View Quiz History
+
 Display previous quiz results and statistics:
 
 ```bash
@@ -134,10 +148,12 @@ node index.js results [options]
 ```
 
 **Options:**
+
 - `-l, --latest`: Show only the latest result with detailed breakdown
 - `-c, --clear`: Clear all results history
 
 **Examples:**
+
 ```bash
 # Show all quiz history
 node index.js results
@@ -183,6 +199,7 @@ The quiz uses JSON files to store questions. Here's the structure:
 ### Question Types
 
 #### 1. Single Choice
+
 Select exactly one correct answer from multiple options:
 
 ```json
@@ -195,6 +212,7 @@ Select exactly one correct answer from multiple options:
 ```
 
 #### 2. Multiple Choice
+
 Select one or more correct answers:
 
 ```json
@@ -207,6 +225,7 @@ Select one or more correct answers:
 ```
 
 #### 3. Free Form
+
 Open-ended text answers with optional guidance:
 
 ```json
@@ -222,12 +241,14 @@ Open-ended text answers with optional guidance:
 ```
 
 ### Required Fields
+
 - `id`: Unique identifier for the question
 - `question`: The question text
 - `type`: Question type (single-choice, multiple-choice, free-form)
 - `correctAnswers`: Array of correct answers (for choice questions)
 
 ### Optional Fields
+
 - `category`: Question category (aws, ai, etc.)
 - `description`: Additional context for the question
 - `explanation`: Explanation shown after answering
@@ -240,6 +261,7 @@ Open-ended text answers with optional guidance:
 2. Add new question objects to the `questions` array
 3. Follow the question format specified above
 4. Validate your questions:
+
 ```bash
 node index.js validate
 ```
@@ -254,6 +276,7 @@ The CLI automatically tracks your performance:
 - **Detailed Breakdown**: Review specific incorrect answers
 
 Results are stored in `~/.aws-ai-quiz/results.json` and include:
+
 - Timestamp of each quiz session
 - Detailed answer history
 - Performance by question type
@@ -262,6 +285,7 @@ Results are stored in `~/.aws-ai-quiz/results.json` and include:
 ## Examples
 
 ### Learning Mode Session
+
 ```bash
 # Start with retry enabled for learning
 node index.js start --retry --category aws
@@ -271,6 +295,7 @@ node index.js results --latest
 ```
 
 ### Timed Practice Session
+
 ```bash
 # Simulate exam conditions
 node index.js start --time 30 --number 20 --shuffle
@@ -280,6 +305,7 @@ node index.js results
 ```
 
 ### Quick Knowledge Check
+
 ```bash
 # 5 random questions from all categories
 node index.js start -n 5 -s
@@ -290,7 +316,7 @@ node index.js list --stats
 
 ## File Structure
 
-```
+```text
 quiz-cli/
 ├── index.js              # Main CLI entry point
 ├── package.json           # Project configuration
@@ -326,9 +352,7 @@ MIT License - see LICENSE file for details.
 ## Support
 
 For issues or questions:
+
 - Create an issue in the project repository
-- Email: aaron@3bytes.com
-
----
-
-**Happy Learning! 🚀**
+- Reach out directly on [LinkedIn](https://linkedin.com/in/awentzel)
+- Reach out directly on [GitHub](https://github.com/awentzel)
