@@ -1,4 +1,4 @@
-# AWS & AI Quiz CLI
+# Quiz AI
 
 A comprehensive command-line interface for testing knowledge of AWS services and AI/ML concepts. Features interactive quizzes with multiple question types, progress tracking, and detailed result analysis.
 
