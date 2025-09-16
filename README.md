@@ -4,13 +4,13 @@ A comprehensive command-line interface for testing knowledge of AWS services and
 
 ## Features
 
-- 🎯 **Multiple Question Types**: Single choice, multiple choice, and free-form questions
-- 📊 **Smart Scoring**: Automatic scoring with detailed performance analytics
-- ⏱️ **Flexible Timing**: Optional time limits for timed practice sessions
-- 🔄 **Retry Options**: Allow retry for incorrect answers during learning mode
-- 📈 **Progress Tracking**: Save and view quiz history with performance trends
-- 🎨 **Beautiful Interface**: Colorful, intuitive CLI with clear feedback
-- 📚 **Comprehensive Coverage**: AWS services and AI/ML concepts with explanations
+- **Multiple Question Types**: Single choice, multiple choice, and free-form questions
+- **Smart Scoring**: Automatic scoring with detailed performance analytics
+- **Flexible Timing**: Optional time limits for timed practice sessions
+- **Retry Options**: Allow retry for incorrect answers during learning mode
+- **Progress Tracking**: Save and view quiz history with performance trends
+- **Beautiful Interface**: Colorful, intuitive CLI with clear feedback
+- **Comprehensive Coverage**: AWS services and AI/ML concepts with explanations
 
 ## Installation
 
