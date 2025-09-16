@@ -1,0 +1,986 @@
+{
+  "metadata": {
+    "title": "AWS Certified AI Practitioner (AIF-C01) Exam Prep Quiz",
+    "description": "Comprehensive quiz covering AWS AI/ML services and concepts for AIF-C01 certification",
+    "version": "2.0.0",
+    "author": "3bytes",
+    "created": "2025-09-15",
+    "updated": "2025-09-15",
+    "categories": ["aws", "ai", "aifc01", "certification"],
+    "examInfo": {
+      "certificationName": "AWS Certified AI Practitioner",
+      "examCode": "AIF-C01",
+      "domains": [
+        "Domain 1: Fundamentals of AI and ML (20%)",
+        "Domain 2: Fundamentals of Generative AI (24%)", 
+        "Domain 3: Applications of Foundation Models (28%)",
+        "Domain 4: Guidelines for Responsible AI (14%)",
+        "Domain 5: Security, Compliance, and Governance for AI Solutions (14%)"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "aws-001",
+      "category": "aws",
+      "type": "single-choice",
+      "question": "Which AWS service is primarily used for object storage?",
+      "options": [
+        "Amazon EC2",
+        "Amazon S3",
+        "Amazon RDS",
+        "Amazon DynamoDB"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Amazon S3 (Simple Storage Service) is AWS's object storage service that offers industry-leading scalability, data availability, security, and performance."
+    },
+    {
+      "id": "aws-002",
+      "category": "aws",
+      "type": "multiple-choice",
+      "question": "Which of the following are AWS compute services? (Select all that apply)",
+      "options": [
+        "Amazon EC2",
+        "AWS Lambda",
+        "Amazon S3",
+        "Amazon ECS",
+        "Amazon RDS"
+      ],
+      "correctAnswers": [0, 1, 3],
+      "explanation": "EC2 provides virtual servers, Lambda offers serverless computing, and ECS provides container orchestration. S3 is storage and RDS is a database service."
+    },
+    {
+      "id": "aws-003",
+      "category": "aws",
+      "type": "free-form",
+      "question": "Explain the difference between Amazon EBS and Amazon EFS storage services.",
+      "sampleAnswers": [
+        "EBS provides block-level storage volumes for EC2 instances, while EFS provides scalable file storage for multiple EC2 instances",
+        "EBS is attached to single EC2 instance, EFS can be mounted by multiple instances simultaneously",
+        "EBS offers persistent block storage, EFS provides shared network file system storage"
+      ],
+      "keywords": ["block", "file", "single", "multiple", "persistent", "shared", "network"],
+      "explanation": "EBS provides persistent block storage volumes for EC2 instances (one-to-one relationship), while EFS provides scalable, shared file storage that can be accessed by multiple EC2 instances simultaneously."
+    },
+    {
+      "id": "aws-004",
+      "category": "aws",
+      "type": "single-choice",
+      "question": "What is the maximum execution duration for an AWS Lambda function?",
+      "options": [
+        "5 minutes",
+        "10 minutes",
+        "15 minutes",
+        "30 minutes"
+      ],
+      "correctAnswers": [2],
+      "explanation": "AWS Lambda functions have a maximum execution duration of 15 minutes. This timeout helps prevent runaway functions and manage costs."
+    },
+    {
+      "id": "aws-005",
+      "category": "aws",
+      "type": "multiple-choice",
+      "question": "Which AWS services can be used for auto-scaling? (Select all that apply)",
+      "options": [
+        "Amazon EC2 Auto Scaling",
+        "Amazon ECS Service Auto Scaling",
+        "AWS Lambda",
+        "Amazon RDS",
+        "Application Auto Scaling"
+      ],
+      "correctAnswers": [0, 1, 2, 4],
+      "explanation": "EC2 Auto Scaling scales EC2 instances, ECS Service Auto Scaling scales ECS services, Lambda automatically scales based on demand, and Application Auto Scaling can scale various AWS resources. RDS has limited auto-scaling capabilities."
+    },
+    {
+      "id": "ai-001",
+      "category": "ai",
+      "type": "single-choice",
+      "question": "What does 'supervised learning' mean in machine learning?",
+      "options": [
+        "Learning without any human intervention",
+        "Learning with labeled training data",
+        "Learning by trial and error",
+        "Learning from unlabeled data"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Supervised learning uses labeled training data where the desired output is known, allowing the algorithm to learn the mapping between inputs and outputs."
+    },
+    {
+      "id": "ai-002",
+      "category": "ai",
+      "type": "multiple-choice",
+      "question": "Which of the following are types of neural network architectures? (Select all that apply)",
+      "options": [
+        "Convolutional Neural Network (CNN)",
+        "Recurrent Neural Network (RNN)",
+        "Decision Tree",
+        "Transformer",
+        "Linear Regression"
+      ],
+      "correctAnswers": [0, 1, 3],
+      "explanation": "CNNs are used for image processing, RNNs for sequence data, and Transformers for attention-based models. Decision Trees and Linear Regression are different ML algorithms, not neural network architectures."
+    },
+    {
+      "id": "ai-003",
+      "category": "ai",
+      "type": "free-form",
+      "question": "What is the purpose of a loss function in machine learning?",
+      "sampleAnswers": [
+        "To measure how well the model's predictions match the actual target values",
+        "To quantify the difference between predicted and actual values during training",
+        "To provide feedback for the optimization algorithm to improve model performance",
+        "To calculate the error that the model makes on training data"
+      ],
+      "keywords": ["measure", "error", "difference", "predicted", "actual", "optimization", "training"],
+      "explanation": "A loss function measures the difference between the model's predictions and the actual target values, providing a signal for the optimization algorithm to minimize during training."
+    },
+    {
+      "id": "ai-004",
+      "category": "ai",
+      "type": "single-choice",
+      "question": "What is the main advantage of using pre-trained models in deep learning?",
+      "options": [
+        "They are always more accurate",
+        "They require less computational resources and training time",
+        "They can only work with specific datasets",
+        "They don't need any fine-tuning"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Pre-trained models have already learned useful features from large datasets, so they require significantly less computational resources and training time when adapted to new tasks through transfer learning."
+    },
+    {
+      "id": "ai-005",
+      "category": "ai",
+      "type": "multiple-choice",
+      "question": "Which of the following are common evaluation metrics for classification problems? (Select all that apply)",
+      "options": [
+        "Accuracy",
+        "Precision",
+        "Recall",
+        "Mean Squared Error",
+        "F1-Score"
+      ],
+      "correctAnswers": [0, 1, 2, 4],
+      "explanation": "Accuracy, Precision, Recall, and F1-Score are all classification metrics. Mean Squared Error is typically used for regression problems, not classification."
+    },
+    {
+      "id": "aws-ai-001",
+      "category": "aws",
+      "type": "single-choice",
+      "question": "Which AWS service provides pre-built AI/ML models for common use cases like image recognition and text analysis?",
+      "options": [
+        "Amazon SageMaker",
+        "Amazon Rekognition",
+        "AWS AI Services",
+        "Amazon Comprehend"
+      ],
+      "correctAnswers": [2],
+      "explanation": "AWS AI Services is the umbrella term for pre-built AI services including Rekognition (image analysis), Comprehend (text analysis), Polly (text-to-speech), and others."
+    },
+    {
+      "id": "aws-ai-002",
+      "category": "aws",
+      "type": "free-form",
+      "question": "Describe the key differences between Amazon SageMaker and AWS AI Services.",
+      "sampleAnswers": [
+        "SageMaker is for building and training custom ML models, while AI Services provide pre-built models for common tasks",
+        "SageMaker requires ML expertise to build models, AI Services are ready-to-use APIs for specific use cases",
+        "SageMaker offers full ML workflow management, AI Services offer plug-and-play AI capabilities"
+      ],
+      "keywords": ["custom", "pre-built", "training", "ready-to-use", "APIs", "workflow", "expertise"],
+      "explanation": "Amazon SageMaker is a comprehensive ML platform for building, training, and deploying custom models, while AWS AI Services provide pre-built, ready-to-use AI capabilities through simple APIs."
+    },
+    {
+      "id": "aws-006",
+      "category": "aws",
+      "type": "single-choice",
+      "question": "Which AWS service is used for content delivery and caching?",
+      "options": [
+        "Amazon Route 53",
+        "Amazon CloudFront",
+        "AWS Direct Connect",
+        "Amazon API Gateway"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Amazon CloudFront is AWS's content delivery network (CDN) service that caches content at edge locations worldwide to reduce latency for end users."
+    },
+    {
+      "id": "aws-007",
+      "category": "aws",
+      "type": "multiple-choice",
+      "question": "Which of the following are AWS database services? (Select all that apply)",
+      "options": [
+        "Amazon RDS",
+        "Amazon DynamoDB",
+        "Amazon ElastiCache",
+        "Amazon S3",
+        "Amazon DocumentDB"
+      ],
+      "correctAnswers": [0, 1, 2, 4],
+      "explanation": "RDS is a relational database service, DynamoDB is a NoSQL database, ElastiCache provides in-memory caching, and DocumentDB is a document database. S3 is object storage, not a database service."
+    },
+    {
+      "id": "ai-006",
+      "category": "ai",
+      "type": "free-form",
+      "question": "Explain what overfitting means in machine learning and how to prevent it.",
+      "sampleAnswers": [
+        "Overfitting occurs when a model learns the training data too well, including noise, and performs poorly on new data. Prevent with regularization, cross-validation, and more training data",
+        "When a model memorizes training data but can't generalize to new data. Use techniques like dropout, early stopping, and data augmentation",
+        "Model performs well on training data but poorly on test data due to excessive complexity. Reduce complexity, use validation sets, and regularization techniques"
+      ],
+      "keywords": ["memorizes", "training", "generalize", "test", "regularization", "validation", "dropout", "complexity"],
+      "explanation": "Overfitting happens when a model learns the training data too well, including noise and specific patterns that don't generalize. It can be prevented through regularization, cross-validation, dropout, early stopping, and ensuring adequate training data."
+    },
+    {
+      "id": "aifc01-001",
+      "category": "aifc01",
+      "domain": "3",
+      "type": "single-choice",
+      "question": "Which AWS service provides pre-trained foundation models for generative AI applications?",
+      "options": [
+        "Amazon SageMaker",
+        "Amazon Bedrock",
+        "Amazon Comprehend",
+        "Amazon Rekognition"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Amazon Bedrock is AWS's fully managed service that provides access to foundation models from leading AI companies like Anthropic, Cohere, and Meta through a unified API."
+    },
+    {
+      "id": "aifc01-002",
+      "category": "aifc01",
+      "domain": "1",
+      "type": "multiple-choice",
+      "question": "Which of the following are key characteristics of foundation models? (Select all that apply)",
+      "options": [
+        "Pre-trained on large datasets",
+        "Can be fine-tuned for specific tasks",
+        "Only work with text data",
+        "Use transformer architecture",
+        "Require minimal computational resources"
+      ],
+      "correctAnswers": [0, 1, 3],
+      "explanation": "Foundation models are pre-trained on large datasets, can be fine-tuned for specific tasks, and typically use transformer architecture. They work with various data types (text, images, audio) and require significant computational resources."
+    },
+    {
+      "id": "aifc01-003",
+      "category": "aifc01",
+      "domain": "2",
+      "type": "single-choice",
+      "question": "What is the primary purpose of prompt engineering in generative AI?",
+      "options": [
+        "To train new models from scratch",
+        "To optimize model performance through better input design",
+        "To reduce computational costs",
+        "To encrypt sensitive data"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Prompt engineering involves designing and optimizing input prompts to elicit desired outputs from generative AI models, improving their performance without retraining."
+    },
+    {
+      "id": "aifc01-004",
+      "category": "aifc01",
+      "domain": "2",
+      "type": "free-form",
+      "question": "Explain the concept of 'hallucination' in large language models and why it's a concern.",
+      "sampleAnswers": [
+        "Hallucination occurs when LLMs generate plausible-sounding but factually incorrect or nonsensical information",
+        "When models confidently produce false information that appears credible but isn't based on training data",
+        "The tendency of AI models to fabricate facts, statistics, or references that sound realistic but are inaccurate"
+      ],
+      "keywords": ["false", "incorrect", "fabricate", "plausible", "inaccurate", "factual", "credible"],
+      "explanation": "Hallucination in LLMs refers to the generation of content that appears plausible but is factually incorrect, fabricated, or not grounded in the training data. It's concerning because the output can seem credible while being completely false."
+    },
+    {
+      "id": "aifc01-005",
+      "category": "aifc01",
+      "domain": "3",
+      "type": "single-choice",
+      "question": "Which AWS service would you use to build a custom chatbot using foundation models?",
+      "options": [
+        "Amazon Lex",
+        "Amazon Bedrock",
+        "Amazon Connect",
+        "Amazon Polly"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Amazon Bedrock provides access to foundation models that can be used to build custom chatbots. Amazon Lex is for conversational interfaces but doesn't provide foundation models."
+    },
+    {
+      "id": "aifc01-006",
+      "category": "aifc01",
+      "domain": "2",
+      "type": "multiple-choice",
+      "question": "Which techniques can help improve the accuracy of generative AI responses? (Select all that apply)",
+      "options": [
+        "Retrieval-Augmented Generation (RAG)",
+        "Fine-tuning on domain-specific data",
+        "Prompt engineering",
+        "Increasing model size only",
+        "Chain-of-thought prompting"
+      ],
+      "correctAnswers": [0, 1, 2, 4],
+      "explanation": "RAG, fine-tuning, prompt engineering, and chain-of-thought prompting all help improve accuracy. Simply increasing model size doesn't guarantee better accuracy without proper techniques."
+    },
+    {
+      "id": "aifc01-007",
+      "category": "aifc01",
+      "domain": "3",
+      "type": "single-choice",
+      "question": "What is the main benefit of using Amazon Bedrock Agents?",
+      "options": [
+        "Lower costs for model inference",
+        "Ability to execute multi-step tasks and use external tools",
+        "Faster model training",
+        "Better data encryption"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Amazon Bedrock Agents enable foundation models to execute multi-step tasks, use external tools, and access up-to-date information through orchestrated workflows."
+    },
+    {
+      "id": "aifc01-008",
+      "category": "aifc01",
+      "domain": "2",
+      "type": "free-form",
+      "question": "What is Retrieval-Augmented Generation (RAG) and how does it benefit AI applications?",
+      "sampleAnswers": [
+        "RAG combines information retrieval with generation, allowing models to access external knowledge sources for more accurate and up-to-date responses",
+        "A technique that retrieves relevant documents from a knowledge base and uses them to augment the context for generating responses",
+        "RAG helps models provide factual, current information by grounding responses in retrieved external data rather than just training data"
+      ],
+      "keywords": ["retrieval", "external", "knowledge", "documents", "context", "factual", "current", "grounding"],
+      "explanation": "RAG enhances generative models by retrieving relevant information from external knowledge sources and using it to augment the generation process, resulting in more accurate, factual, and up-to-date responses."
+    },
+    {
+      "id": "aifc01-009",
+      "category": "aifc01",
+      "domain": "3",
+      "type": "single-choice",
+      "question": "Which AWS service provides guardrails for responsible AI applications?",
+      "options": [
+        "AWS IAM",
+        "Amazon Bedrock Guardrails",
+        "AWS Config",
+        "Amazon Macie"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Amazon Bedrock Guardrails helps implement safeguards for foundation models by filtering harmful content, blocking specific topics, and ensuring responsible AI usage."
+    },
+    {
+      "id": "aifc01-010",
+      "category": "aifc01",
+      "domain": "4",
+      "type": "multiple-choice",
+      "question": "Which are key principles of responsible AI? (Select all that apply)",
+      "options": [
+        "Fairness and bias mitigation",
+        "Transparency and explainability",
+        "Maximizing model size",
+        "Privacy and data protection",
+        "Human oversight and control"
+      ],
+      "correctAnswers": [0, 1, 3, 4],
+      "explanation": "Responsible AI principles include fairness, transparency, privacy protection, and human oversight. Model size alone doesn't determine responsible AI implementation."
+    },
+    {
+      "id": "aifc01-011",
+      "category": "aifc01",
+      "domain": "5",
+      "type": "single-choice",
+      "question": "What is the primary purpose of model fine-tuning in the context of foundation models?",
+      "options": [
+        "To reduce model size",
+        "To adapt the model for specific tasks or domains",
+        "To increase training speed",
+        "To eliminate all biases"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Fine-tuning adapts pre-trained foundation models to perform better on specific tasks or domains by training on task-specific data while leveraging the model's existing knowledge."
+    },
+    {
+      "id": "aifc01-012",
+      "category": "aifc01",
+      "domain": "2",
+      "type": "free-form",
+      "question": "Describe the difference between few-shot and zero-shot learning in the context of large language models.",
+      "sampleAnswers": [
+        "Zero-shot learning performs tasks without examples, while few-shot learning uses a small number of examples in the prompt to guide the model",
+        "Zero-shot relies on the model's pre-trained knowledge, few-shot provides examples to help the model understand the desired output format",
+        "Few-shot includes sample input-output pairs in the prompt, zero-shot asks the model to perform tasks with just instructions"
+      ],
+      "keywords": ["examples", "prompt", "pre-trained", "instructions", "sample", "pairs", "format"],
+      "explanation": "Zero-shot learning asks models to perform tasks without examples, relying on pre-trained knowledge. Few-shot learning provides a few examples in the prompt to guide the model's understanding of the task."
+    },
+    {
+      "id": "aifc01-013",
+      "category": "aifc01",
+      "domain": "3",
+      "type": "single-choice",
+      "question": "Which AWS service would you use to automatically detect and redact personally identifiable information (PII) in AI applications?",
+      "options": [
+        "Amazon Macie",
+        "AWS CloudTrail",
+        "Amazon Comprehend",
+        "AWS Secrets Manager"
+      ],
+      "correctAnswers": [2],
+      "explanation": "Amazon Comprehend provides PII detection and redaction capabilities, making it suitable for protecting sensitive information in AI applications."
+    },
+    {
+      "id": "aifc01-014",
+      "category": "aifc01",
+      "domain": "1",
+      "type": "multiple-choice",
+      "question": "Which factors should be considered when selecting a foundation model? (Select all that apply)",
+      "options": [
+        "Task requirements and use case",
+        "Model size and computational requirements",
+        "Cost and licensing terms",
+        "Training data sources and biases",
+        "Only the newest available model"
+      ],
+      "correctAnswers": [0, 1, 2, 3],
+      "explanation": "Model selection should consider task requirements, computational needs, costs, licensing, and potential biases. The newest model isn't always the best choice for every use case."
+    },
+    {
+      "id": "aifc01-015",
+      "category": "aifc01",
+      "domain": "2",
+      "type": "single-choice",
+      "question": "What is the main advantage of using Amazon Bedrock Knowledge Bases?",
+      "options": [
+        "Faster model training",
+        "Reduced inference costs",
+        "Enhanced model responses with domain-specific information",
+        "Automatic model updates"
+      ],
+      "correctAnswers": [2],
+      "explanation": "Amazon Bedrock Knowledge Bases enable RAG by connecting foundation models to proprietary data sources, enhancing responses with relevant, domain-specific information."
+    },
+    {
+      "id": "aifc01-016",
+      "category": "aifc01",
+      "domain": "3",
+      "type": "free-form",
+      "question": "What are some potential risks and challenges when deploying generative AI in production environments?",
+      "sampleAnswers": [
+        "Hallucinations, bias amplification, data privacy concerns, high computational costs, and potential misuse",
+        "Model drift, security vulnerabilities, regulatory compliance, content moderation, and scalability challenges",
+        "Inaccurate outputs, ethical concerns, resource consumption, integration complexity, and ongoing monitoring needs"
+      ],
+      "keywords": ["hallucinations", "bias", "privacy", "security", "compliance", "costs", "monitoring", "drift"],
+      "explanation": "Production deployment of generative AI faces challenges including hallucinations, bias issues, privacy concerns, high costs, security risks, regulatory compliance, and the need for continuous monitoring and governance."
+    },
+    {
+      "id": "aifc01-017",
+      "category": "aifc01",
+      "domain": "1",
+      "type": "single-choice",
+      "question": "Which approach is recommended for monitoring AI model performance in production?",
+      "options": [
+        "Manual testing once per month",
+        "Continuous monitoring with automated alerts",
+        "User feedback only",
+        "No monitoring required"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Continuous monitoring with automated alerts is essential for detecting model drift, performance degradation, and other issues in production AI systems."
+    },
+    {
+      "id": "aifc01-018",
+      "category": "aifc01",
+      "domain": "2",
+      "type": "multiple-choice",
+      "question": "Which AWS services can help with AI model governance and compliance? (Select all that apply)",
+      "options": [
+        "AWS CloudTrail",
+        "Amazon Bedrock Guardrails",
+        "AWS Config",
+        "Amazon S3",
+        "AWS IAM"
+      ],
+      "correctAnswers": [0, 1, 2, 4],
+      "explanation": "CloudTrail provides audit trails, Bedrock Guardrails enforce responsible AI practices, Config monitors compliance, and IAM manages access controls. S3 is primarily for storage."
+    },
+    {
+      "id": "aifc01-019",
+      "category": "aifc01",
+      "domain": "3",
+      "type": "single-choice",
+      "question": "What is the purpose of embedding models in AI applications?",
+      "options": [
+        "To compress data for storage",
+        "To convert text/data into numerical vector representations",
+        "To encrypt sensitive information",
+        "To reduce model size"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Embedding models convert text, images, or other data into numerical vector representations that capture semantic meaning, enabling similarity search and retrieval operations."
+    },
+    {
+      "id": "aifc01-020",
+      "category": "aifc01",
+      "domain": "4",
+      "type": "free-form",
+      "question": "Explain the concept of 'model drift' and why it's important to monitor in AI systems.",
+      "sampleAnswers": [
+        "Model drift occurs when a model's performance degrades over time due to changes in data patterns, requiring retraining or adjustment",
+        "When the statistical properties of input data change from training conditions, causing model accuracy to decline",
+        "The gradual degradation of model performance as real-world data differs from training data over time"
+      ],
+      "keywords": ["performance", "degrades", "changes", "patterns", "statistical", "accuracy", "real-world", "training"],
+      "explanation": "Model drift refers to the degradation of model performance over time as real-world data patterns change from the original training conditions, requiring continuous monitoring and potential model updates."
+    },
+    {
+      "id": "aifc01-021",
+      "category": "aifc01",
+      "domain": "5",
+      "type": "single-choice",
+      "question": "Which technique helps reduce bias in AI model outputs?",
+      "options": [
+        "Using larger datasets only",
+        "Diverse training data and bias testing",
+        "Increasing model complexity",
+        "Faster training algorithms"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Reducing bias requires diverse, representative training data and systematic bias testing throughout the development process, not just larger datasets or complex models."
+    },
+    {
+      "id": "aifc01-022",
+      "category": "aifc01",
+      "domain": "3",
+      "type": "multiple-choice",
+      "question": "Which are common use cases for generative AI in business applications? (Select all that apply)",
+      "options": [
+        "Content creation and copywriting",
+        "Code generation and debugging",
+        "Customer service chatbots",
+        "Real-time fraud detection",
+        "Document summarization"
+      ],
+      "correctAnswers": [0, 1, 2, 4],
+      "explanation": "Generative AI excels at content creation, code generation, chatbots, and document summarization. Real-time fraud detection typically uses different ML approaches focused on classification."
+    },
+    {
+      "id": "aifc01-023",
+      "category": "aifc01",
+      "domain": "1",
+      "type": "single-choice",
+      "question": "What is the primary benefit of using vector databases in AI applications?",
+      "options": [
+        "Faster transaction processing",
+        "Efficient similarity search and retrieval",
+        "Better data compression",
+        "Simplified data modeling"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Vector databases are optimized for storing and querying high-dimensional vectors, enabling efficient similarity search operations crucial for RAG and recommendation systems."
+    },
+    {
+      "id": "aifc01-024",
+      "category": "aifc01",
+      "domain": "2",
+      "type": "free-form",
+      "question": "What are the key considerations when implementing human-in-the-loop (HITL) systems for AI applications?",
+      "sampleAnswers": [
+        "Defining clear escalation criteria, designing intuitive interfaces, ensuring timely human intervention, and maintaining audit trails",
+        "Identifying when human judgment is needed, providing context to human reviewers, and balancing automation with human oversight",
+        "Creating feedback mechanisms, training human reviewers, establishing quality controls, and managing hand-off processes"
+      ],
+      "keywords": ["escalation", "intervention", "oversight", "feedback", "training", "quality", "context", "audit"],
+      "explanation": "HITL systems require clear escalation rules, intuitive interfaces for human reviewers, proper training, feedback mechanisms, and audit capabilities to ensure effective collaboration between AI and humans."
+    },
+    {
+      "id": "aifc01-025",
+      "category": "aifc01",
+      "domain": "5",
+      "type": "single-choice",
+      "question": "Which AWS service provides natural language processing capabilities for analyzing text sentiment and entities?",
+      "options": [
+        "Amazon Textract",
+        "Amazon Comprehend",
+        "Amazon Polly",
+        "Amazon Translate"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Amazon Comprehend provides natural language processing capabilities including sentiment analysis, entity recognition, key phrase extraction, and language detection."
+    },
+    {
+      "id": "aifc01-026",
+      "category": "aifc01",
+      "domain": "1",
+      "type": "single-choice",
+      "question": "What is the primary difference between supervised and unsupervised machine learning?",
+      "options": [
+        "Supervised learning uses labeled data, unsupervised learning finds patterns in unlabeled data",
+        "Supervised learning is faster than unsupervised learning",
+        "Supervised learning requires more computational power",
+        "Supervised learning only works with numerical data"
+      ],
+      "correctAnswers": [0],
+      "explanation": "Supervised learning uses labeled training data where the desired output is known, while unsupervised learning discovers hidden patterns in data without predefined labels."
+    },
+    {
+      "id": "aifc01-027",
+      "category": "aifc01",
+      "domain": "1",
+      "type": "multiple-choice",
+      "question": "Which are common types of machine learning algorithms? (Select all that apply)",
+      "options": [
+        "Classification",
+        "Regression", 
+        "Clustering",
+        "Data compression",
+        "Reinforcement learning"
+      ],
+      "correctAnswers": [0, 1, 2, 4],
+      "explanation": "Classification, regression, clustering, and reinforcement learning are fundamental ML algorithm types. Data compression is a technique but not a specific ML algorithm type."
+    },
+    {
+      "id": "aifc01-028",
+      "category": "aifc01",
+      "domain": "1",
+      "type": "free-form",
+      "question": "Explain the concept of 'training' and 'inference' in machine learning.",
+      "sampleAnswers": [
+        "Training is the process of teaching a model using historical data, inference is using the trained model to make predictions on new data",
+        "Training involves learning patterns from labeled examples, inference applies learned patterns to make predictions",
+        "Training builds the model using datasets, inference deploys the model to predict outcomes"
+      ],
+      "keywords": ["learning", "patterns", "historical", "predictions", "labeled", "examples", "deploy"],
+      "explanation": "Training is the phase where ML models learn patterns from historical data, while inference is the phase where trained models make predictions on new, unseen data."
+    },
+    {
+      "id": "aifc01-029",
+      "category": "aifc01",
+      "domain": "1",
+      "type": "single-choice",
+      "question": "What is the purpose of cross-validation in machine learning?",
+      "options": [
+        "To increase model accuracy",
+        "To evaluate model performance and prevent overfitting",
+        "To reduce training time",
+        "To compress model size"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Cross-validation is used to assess how well a model generalizes to unseen data by splitting the dataset into multiple folds for training and validation, helping prevent overfitting."
+    },
+    {
+      "id": "aifc01-030",
+      "category": "aifc01",
+      "domain": "1",
+      "type": "multiple-choice",
+      "question": "Which metrics are commonly used to evaluate classification models? (Select all that apply)",
+      "options": [
+        "Accuracy",
+        "Precision",
+        "Recall",
+        "Mean Absolute Error",
+        "F1-score"
+      ],
+      "correctAnswers": [0, 1, 2, 4],
+      "explanation": "Accuracy, precision, recall, and F1-score are classification metrics. Mean Absolute Error is used for regression problems."
+    },
+    {
+      "id": "aifc01-031",
+      "category": "aifc01",
+      "domain": "2",
+      "type": "single-choice",
+      "question": "What distinguishes generative AI from traditional machine learning models?",
+      "options": [
+        "Generative AI only works with text data",
+        "Generative AI creates new content rather than just analyzing existing data",
+        "Generative AI requires less training data",
+        "Generative AI is always more accurate"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Generative AI models create new content (text, images, code, etc.) based on patterns learned from training data, while traditional ML typically focuses on classification or prediction tasks."
+    },
+    {
+      "id": "aifc01-032",
+      "category": "aifc01",
+      "domain": "2",
+      "type": "free-form",
+      "question": "What are transformer models and why are they important for generative AI?",
+      "sampleAnswers": [
+        "Transformers use attention mechanisms to process sequences, enabling better understanding of context and relationships in data",
+        "Transformer architecture allows parallel processing and better handling of long-range dependencies in text and other sequential data",
+        "Transformers revolutionized NLP by using self-attention to understand relationships between all parts of input simultaneously"
+      ],
+      "keywords": ["attention", "mechanisms", "context", "relationships", "parallel", "dependencies", "self-attention"],
+      "explanation": "Transformers use self-attention mechanisms to process sequences in parallel and capture long-range dependencies, making them highly effective for generative tasks like language modeling."
+    },
+    {
+      "id": "aifc01-033",
+      "category": "aifc01",
+      "domain": "2",
+      "type": "single-choice",
+      "question": "What is the primary benefit of using pre-trained foundation models?",
+      "options": [
+        "They are always free to use",
+        "They leverage existing knowledge and require less task-specific training",
+        "They work only with English text",
+        "They never need fine-tuning"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Pre-trained foundation models have already learned general patterns from large datasets, allowing them to be adapted to specific tasks with less additional training data and computational resources."
+    },
+    {
+      "id": "aifc01-034",
+      "category": "aifc01",
+      "domain": "2",
+      "type": "multiple-choice",
+      "question": "Which are key characteristics of large language models (LLMs)? (Select all that apply)",
+      "options": [
+        "Trained on massive text corpora",
+        "Can perform multiple language tasks",
+        "Only work with English language",
+        "Use transformer architecture",
+        "Require minimal computational resources"
+      ],
+      "correctAnswers": [0, 1, 3],
+      "explanation": "LLMs are trained on vast text datasets, can handle multiple languages and tasks, and typically use transformer architecture. They require significant computational resources."
+    },
+    {
+      "id": "aifc01-035",
+      "category": "aifc01",
+      "domain": "2",
+      "type": "single-choice",
+      "question": "What is 'temperature' in the context of generative AI model outputs?",
+      "options": [
+        "The physical heat generated by the model",
+        "A parameter controlling randomness in generated outputs",
+        "The speed of text generation",
+        "The model's confidence level"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Temperature is a hyperparameter that controls the randomness of model outputs. Lower temperatures produce more deterministic outputs, while higher temperatures increase creativity and randomness."
+    },
+    {
+      "id": "aifc01-036",
+      "category": "aifc01",
+      "domain": "2",
+      "type": "free-form",
+      "question": "Describe the concept of 'tokens' in language models and why tokenization is important.",
+      "sampleAnswers": [
+        "Tokens are the basic units that language models process, created by breaking text into smaller pieces like words or subwords",
+        "Tokenization converts text into numerical representations that models can understand and process",
+        "Tokens represent pieces of text (words, subwords, or characters) that serve as input units for language models"
+      ],
+      "keywords": ["units", "breaking", "subwords", "numerical", "representations", "input", "process"],
+      "explanation": "Tokens are the fundamental units that language models process, created by breaking text into manageable pieces. Tokenization is crucial because models need numerical representations to understand and generate text."
+    },
+    {
+      "id": "aifc01-037",
+      "category": "aifc01",
+      "domain": "3",
+      "type": "single-choice",
+      "question": "Which use case is best suited for foundation models in Amazon Bedrock?",
+      "options": [
+        "Real-time fraud detection",
+        "Content generation and summarization",
+        "Database optimization",
+        "Network monitoring"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Foundation models in Amazon Bedrock excel at generative tasks like content creation, summarization, translation, and conversational AI applications."
+    },
+    {
+      "id": "aifc01-038",
+      "category": "aifc01",
+      "domain": "3",
+      "type": "multiple-choice",
+      "question": "Which business applications commonly benefit from foundation models? (Select all that apply)",
+      "options": [
+        "Customer service chatbots",
+        "Document summarization",
+        "Code generation",
+        "Real-time stock trading",
+        "Marketing content creation"
+      ],
+      "correctAnswers": [0, 1, 2, 4],
+      "explanation": "Foundation models excel at language-based tasks like chatbots, summarization, code generation, and content creation. Real-time stock trading requires different ML approaches focused on speed and numerical prediction."
+    },
+    {
+      "id": "aifc01-039",
+      "category": "aifc01",
+      "domain": "3",
+      "type": "free-form",
+      "question": "How can businesses measure the ROI (Return on Investment) of implementing foundation models?",
+      "sampleAnswers": [
+        "Measure time savings, cost reduction in content creation, improved customer satisfaction, and reduced manual work",
+        "Track productivity gains, quality improvements, faster time-to-market, and reduced operational costs",
+        "Evaluate automation benefits, reduced human effort, improved accuracy, and enhanced customer experience"
+      ],
+      "keywords": ["time", "savings", "cost", "reduction", "productivity", "automation", "efficiency", "accuracy"],
+      "explanation": "ROI for foundation models can be measured through time savings, cost reductions, productivity gains, quality improvements, and enhanced customer experiences across various business processes."
+    },
+    {
+      "id": "aifc01-040",
+      "category": "aifc01",
+      "domain": "3",
+      "type": "single-choice",
+      "question": "What is the primary advantage of using Amazon Bedrock for foundation model applications?",
+      "options": [
+        "It's always the cheapest option",
+        "It provides a managed service with multiple model choices",
+        "It only works with text generation",
+        "It requires no configuration"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Amazon Bedrock provides a fully managed service with access to multiple foundation models from different providers, simplifying deployment and management while offering choice and flexibility."
+    },
+    {
+      "id": "aifc01-041",
+      "category": "aifc01",
+      "domain": "3",
+      "type": "multiple-choice",
+      "question": "Which factors should businesses consider when selecting foundation models for production use? (Select all that apply)",
+      "options": [
+        "Model performance on specific tasks",
+        "Latency and throughput requirements",
+        "Cost and licensing terms",
+        "Only the newest available model",
+        "Compliance and data privacy requirements"
+      ],
+      "correctAnswers": [0, 1, 2, 4],
+      "explanation": "Businesses should evaluate task performance, technical requirements (latency/throughput), costs, and compliance needs. The newest model isn't always the best choice for specific business requirements."
+    },
+    {
+      "id": "aifc01-042",
+      "category": "aifc01",
+      "domain": "3",
+      "type": "single-choice",
+      "question": "Which approach is recommended for integrating foundation models into existing business workflows?",
+      "options": [
+        "Replace all existing systems immediately",
+        "Start with pilot projects and gradually scale",
+        "Only use foundation models for new projects",
+        "Implement all use cases simultaneously"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Starting with pilot projects allows businesses to validate value, learn best practices, and gradually scale foundation model integration while minimizing risk and disruption."
+    },
+    {
+      "id": "aifc01-043",
+      "category": "aifc01",
+      "domain": "3",
+      "type": "free-form",
+      "question": "What are the key considerations for prompt design in business applications of foundation models?",
+      "sampleAnswers": [
+        "Clear instructions, relevant context, specific output format requirements, and consistent terminology",
+        "Business-specific examples, appropriate tone, desired output structure, and error handling instructions",
+        "Task clarity, domain expertise, output constraints, and iterative refinement based on results"
+      ],
+      "keywords": ["clear", "instructions", "context", "format", "examples", "tone", "structure", "constraints"],
+      "explanation": "Effective prompt design for business applications requires clear instructions, relevant context, specific formatting requirements, appropriate examples, and consideration of business tone and constraints."
+    },
+    {
+      "id": "aifc01-044",
+      "category": "aifc01",
+      "domain": "4",
+      "type": "single-choice",
+      "question": "What is the primary goal of responsible AI practices?",
+      "options": [
+        "To make AI systems run faster",
+        "To ensure AI systems are fair, transparent, and beneficial",
+        "To reduce AI development costs",
+        "To eliminate all AI risks"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Responsible AI focuses on ensuring AI systems are developed and deployed in ways that are fair, transparent, accountable, and beneficial to society while minimizing potential harms."
+    },
+    {
+      "id": "aifc01-045",
+      "category": "aifc01",
+      "domain": "4",
+      "type": "multiple-choice",
+      "question": "Which are key components of AI ethics frameworks? (Select all that apply)",
+      "options": [
+        "Fairness and non-discrimination",
+        "Transparency and explainability",
+        "Maximum profit generation",
+        "Privacy protection",
+        "Human oversight"
+      ],
+      "correctAnswers": [0, 1, 3, 4],
+      "explanation": "AI ethics frameworks emphasize fairness, transparency, privacy protection, and human oversight. Profit generation, while important for sustainability, is not a core ethical principle."
+    },
+    {
+      "id": "aifc01-046",
+      "category": "aifc01",
+      "domain": "4",
+      "type": "free-form",
+      "question": "How can organizations identify and mitigate bias in AI systems?",
+      "sampleAnswers": [
+        "Use diverse training data, test across different demographic groups, implement bias detection tools, and establish diverse review teams",
+        "Conduct regular audits, collect representative datasets, monitor model outputs for disparate impact, and provide bias training",
+        "Implement fairness metrics, ensure diverse development teams, test edge cases, and establish feedback mechanisms"
+      ],
+      "keywords": ["diverse", "training", "data", "test", "demographic", "audits", "representative", "fairness", "metrics"],
+      "explanation": "Bias mitigation requires diverse training data, systematic testing across demographic groups, regular audits, fairness metrics, diverse teams, and ongoing monitoring of model outputs."
+    },
+    {
+      "id": "aifc01-047",
+      "category": "aifc01",
+      "domain": "5",
+      "type": "single-choice",
+      "question": "Which AWS service helps organizations implement data governance for AI workloads?",
+      "options": [
+        "Amazon S3",
+        "AWS Lake Formation",
+        "Amazon EC2",
+        "AWS Lambda"
+      ],
+      "correctAnswers": [1],
+      "explanation": "AWS Lake Formation provides data governance capabilities including fine-grained access controls, data cataloging, and compliance features essential for AI workloads."
+    },
+    {
+      "id": "aifc01-048",
+      "category": "aifc01",
+      "domain": "5",
+      "type": "multiple-choice",
+      "question": "Which security measures are important for AI applications in AWS? (Select all that apply)",
+      "options": [
+        "IAM roles and policies for access control",
+        "Encryption at rest and in transit",
+        "VPC isolation for model endpoints",
+        "Disabling all logging to improve performance",
+        "Regular security audits and monitoring"
+      ],
+      "correctAnswers": [0, 1, 2, 4],
+      "explanation": "AI security requires proper IAM controls, encryption, network isolation, and continuous monitoring. Disabling logging reduces security visibility and should be avoided."
+    },
+    {
+      "id": "aifc01-049",
+      "category": "aifc01",
+      "domain": "5",
+      "type": "free-form",
+      "question": "What are the key compliance considerations when deploying AI solutions in regulated industries?",
+      "sampleAnswers": [
+        "Data residency requirements, audit trails, model explainability, privacy regulations, and industry-specific standards",
+        "Regulatory approval processes, data protection laws, documentation requirements, and ongoing compliance monitoring",
+        "Legal frameworks, data governance policies, risk assessments, and regulatory reporting obligations"
+      ],
+      "keywords": ["residency", "audit", "trails", "explainability", "privacy", "regulations", "documentation", "governance"],
+      "explanation": "Regulated industries must consider data residency, audit requirements, model explainability, privacy laws, industry standards, and ongoing compliance monitoring when deploying AI solutions."
+    },
+    {
+      "id": "aifc01-050",
+      "category": "aifc01",
+      "domain": "5",
+      "type": "single-choice",
+      "question": "What is the primary purpose of model versioning in AI governance?",
+      "options": [
+        "To reduce storage costs",
+        "To enable rollback and maintain audit trails",
+        "To improve model performance",
+        "To simplify deployment"
+      ],
+      "correctAnswers": [1],
+      "explanation": "Model versioning enables organizations to track changes, rollback to previous versions if needed, and maintain comprehensive audit trails for compliance and governance purposes."
+    }
+  ]
+}

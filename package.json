@@ -1,0 +1,42 @@
+{
+  "name": "aws-aifc01-quiz-cli",
+  "version": "2.0.0",
+  "description": "Interactive CLI quiz application for AWS Certified AI Practitioner (AIF-C01) exam preparation",
+  "main": "index.js",
+  "bin": {
+    "aws-aifc01-quiz": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js start",
+    "start:aifc01": "node index.js start -c aifc01",
+    "exam-sim": "node index.js start -c aifc01 -t 60 -s",
+    "practice": "node index.js start -c aifc01 -n 10 -s",
+    "test": "node index.js validate",
+    "demo": "./demo-aifc01.sh",
+    "install-global": "npm install -g ."
+  },
+  "keywords": [
+    "aws",
+    "ai",
+    "aifc01",
+    "certification",
+    "exam-prep",
+    "quiz",
+    "cli",
+    "bedrock",
+    "generative-ai",
+    "foundation-models"
+  ],
+  "author": "Aaron Wentzel <aaron@3bytes.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "figlet": "^1.6.0",
+    "inquirer": "^8.2.5",
+    "ora": "^5.4.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
